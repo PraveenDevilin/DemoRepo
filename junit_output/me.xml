@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="3" tests="3" time="25.008603">
+<testcase classname="Validate Facebook Login" name="Home page user credential validation" time="8.922531">
+<skipped><![CDATA[Given User enters Url.......................................................passed
+When User enters "Praveen" and "Praveen"....................................passed
+Then User clicks login button...............................................passed
+Then User gets dirested  to homepage........................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Validate Facebook Login" name="Home page user credential validation" time="7.628107">
+<skipped><![CDATA[Given User enters Url.......................................................passed
+When User enters "Bala" and "Bala"..........................................passed
+Then User clicks login button...............................................passed
+Then User gets dirested  to homepage........................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Validate Facebook Login" name="Home page user credential validation" time="8.457965">
+<skipped><![CDATA[Given User enters Url.......................................................passed
+When User enters "Kishore" and "Kishore"....................................passed
+Then User clicks login button...............................................passed
+Then User gets dirested  to homepage........................................undefined
+]]></skipped>
+</testcase>
+</testsuite>
