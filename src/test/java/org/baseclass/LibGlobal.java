@@ -1,7 +1,5 @@
 package org.baseclass;
 
-import java.awt.Desktop.Action;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,8 +12,13 @@ public class LibGlobal {
 	public static WebDriver driver;
 
 	public static WebDriver launchdriver() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+
+		if (driver == null) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+
+		}
+
 		return driver;
 	}
 

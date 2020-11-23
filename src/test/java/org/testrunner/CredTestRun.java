@@ -7,7 +7,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "G:\\Eclipse workspace\\Cucumber11.30\\src\\test\\resources\\cred.feature"
-, glue = "org.stepdef", dryRun = false)
+, glue = "org.stepdef.CredStepDef", dryRun = false
+,tags = "@SmokeTest")
 public class CredTestRun {
 
 }

@@ -1,5 +1,6 @@
 Feature: Validate Adaction page and getting Order no.
 
+	@SmokeTest
   Scenario Outline: Home page user credential validation with valid usernames and passwords
     Given User enters Url
     When User is entering an vlaid  "<username>"  and an valid  "<password>"

@@ -4,15 +4,13 @@
 //import org.adactionlocators.AdactinLoginPage;
 //import org.adactionlocators.AdactinSerachHotelPage;
 //import org.baseclass.LibGlobal;
-//import org.pageobjectmanager.PageObjectManager;
-//
 //import cucumber.api.java.en.Given;
 //import cucumber.api.java.en.Then;
 //import cucumber.api.java.en.When;
 //
-//public class AdactionStepDef extends LibGlobal {
+//public class AdactinSingle extends LibGlobal {
 //
-//	PageObjectManager manager;
+//	
 //	AdactinLoginPage loginPage;
 //	AdactinSerachHotelPage serachHotelPage;
 //	AdactinBookHotelPage bookHotelPage;
@@ -28,8 +26,8 @@
 //	@When("^User is entering an vlaid  \"([^\"]*)\"  and an valid  \"([^\"]*)\"$")
 //	public void User_is_entering_an_vlaid_and_an_valid(String user, String pass) throws Throwable {
 //
-//		manager = PageObjectManager.getManager();
-//		loginPage = manager.getLoginPage();
+//		 loginPage = new AdactinLoginPage();
+//		
 //		info(loginPage.getTxtUser(), user);
 //		info(loginPage.getTxtPass(), pass);
 //
@@ -43,9 +41,9 @@
 //	@When("^User in the search hotel page enters \"([^\"]*)\" , \"([^\"]*)\", \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
 //	public void User_in_the_search_hotel_page_enters_(String location, String rooms, String checkin, String checkout,
 //			String adults) throws Throwable {
-//		serachHotelPage = manager.getSerachHotelPage();
-//		
-//		Thread.sleep(5000);
+//		serachHotelPage = new AdactinSerachHotelPage();
+//
+//		Thread.sleep(2000);
 //		selection(serachHotelPage.getTxtLocation(), location);
 //		selection(serachHotelPage.getTxtRooms(), rooms);
 //		info(serachHotelPage.getTxtCheckIn(), checkin);
@@ -69,8 +67,8 @@
 //	@When("^User in the Book a Hotel page enters the mandatory fields like \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
 //	public void User_in_the_Book_a_Hotel_page_enters_the_mandatory_fields_like_(String firstname, String lastname,
 //			String address, String cardno, String cardtype, String expirymonth, String expiryyear, String cvvno) {
-//		bookHotelPage = manager.getBookHotelPage();
-//		
+//		bookHotelPage = new AdactinBookHotelPage();
+//
 //		info(bookHotelPage.getTxtFirstName(), firstname);
 //		info(bookHotelPage.getTxtLastName(), lastname);
 //		info(bookHotelPage.getTxtAddress(), address);
